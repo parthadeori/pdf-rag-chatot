@@ -1,0 +1,28 @@
+# Environment variables / secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+installed-packages/
+
+# Temporary files created by the app
+temp.pdf
+
+# Vector database storage (we may add later)
+db/
+
+# Streamlit cache
+.streamlit/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
