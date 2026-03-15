@@ -35,6 +35,15 @@ if uploaded_file is not None:
         embedding=embeddings
     )
 
+    question = st.text_input("Ask a question about the PDF")
+
+    if question:
+        retriever = vectorstore.as_retriever()
+        docs = retriever.invoke(question)
+
+        st.subheader("Relevant chunk retrieved:")
+        st.write(docs[0].page_content)
+
     st.write("Vector database created successfully!")
 
     st.write(f"Total chunks created: {len(chunks)}")
