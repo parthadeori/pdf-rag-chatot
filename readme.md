@@ -182,17 +182,3 @@ GitHub:
 https://github.com/parthadeori
 
 ---
-
----
-
-# After adding the README
-
-Run:
-
-```
-git add README.md
-git commit -m "Improve README with project description and setup instructions"
-git push
-```
-
----
